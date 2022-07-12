@@ -19,7 +19,7 @@ Analyzing games.
 - Die
  
      - `__init__(self, face)`
-               -`face` 
+              -`face` 
           
      - `change_weight(self, face_value, new_weight)`
                -`face_value`
