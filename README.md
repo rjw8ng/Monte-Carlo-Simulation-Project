@@ -40,8 +40,7 @@ Analyzing games.
           
      - `show_game(self, dataframe, form = 'wide')`
                -`dataframe`
-               -`form`   
-          
+               -`form`
 - Analyzer
 
      -`__init__(self, result)`
