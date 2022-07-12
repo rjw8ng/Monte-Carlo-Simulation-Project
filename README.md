@@ -22,7 +22,7 @@ All return values should be described.
 Do not describe private methods and attributes.
 
 # Manifest
- - __init__.py
+ - `__init__.py`
  - setup.py
  - Die.py
  - test.py
