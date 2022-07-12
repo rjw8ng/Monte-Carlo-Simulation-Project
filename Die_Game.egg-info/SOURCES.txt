@@ -1,0 +1,9 @@
+README.md
+setup.py
+Die_Game/__init__.py
+Die_Game/montecarlo.py
+Die_Game/montecarlo_tests.py
+Die_Game.egg-info/PKG-INFO
+Die_Game.egg-info/SOURCES.txt
+Die_Game.egg-info/dependency_links.txt
+Die_Game.egg-info/top_level.txt
