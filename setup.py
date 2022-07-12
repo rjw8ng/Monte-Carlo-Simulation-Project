@@ -7,4 +7,4 @@ setup(name='Die_Game',
       author='Royal Wang',
       author_email='rjw8ng@virginia.edu',
       license='MIT',
-      packages=['Die'])
+      packages=['Die_Game'])
