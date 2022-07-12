@@ -18,8 +18,11 @@ Analyzing games.
 A list of all classes with their public methods and attributes.
 Classes:
 - Die
- - `__init__(self, face)`
- - `change_weight(self, face_value, new_weight)`
+     - `__init__(self, face)`
+     - `change_weight(self, face_value, new_weight)`
+
+              - Nested bullet
+                  - Sub-nested bullet etc
 - Game
 - Analyzer
 
