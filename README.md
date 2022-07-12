@@ -15,29 +15,42 @@ Playing games
 Analyzing games.
 
 # API description
-##Classes:
+## Classes:
 - Die
+- 
      - `__init__(self, face)`
           -`face` 
+          
      - `change_weight(self, face_value, new_weight)`
           -`face_value`
           -`new_weight`
+          
      - `roll(self, amount = 1)`
           -`amount` 
+          
      - `show(self)`
+     
 - Game
+
      -`__init__(self, die_object)`
           -`die_object`
+          
      - `play(self, turns)`
           -`turns` 
+          
      - `show_game(self, dataframe, form = 'wide')`
           -`dataframe`
           -`form`   
+          
 - Analyzer
+
      -`__init__(self, result)`
           -`result`
+          
      - `jackpot(self)`
+     
      - `combo(self)`
+     
      - `face_counts_per_roll(self)`
 
 Each item should show their docstrings.
