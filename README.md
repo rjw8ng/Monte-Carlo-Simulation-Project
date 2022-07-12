@@ -43,7 +43,7 @@ Analyzing games.
                -`form`
 - Analyzer
 
-     -`__init__(self, result)`
+     - `__init__(self, result)`
                -`result`
           
      - `jackpot(self)`
