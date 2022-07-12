@@ -5,7 +5,7 @@
 Name: Royal Wang
 Project: Monte Carlo Simulator
 
-#Synopsis
+# Synopsis
 
 Show demo code of how the classes are used, i.e.
 installing
@@ -22,4 +22,10 @@ All return values should be described.
 Do not describe private methods and attributes.
 
 # Manifest
-A list of all the files in the repo.
+ - __init__.py
+ - setup.py
+ - Die.py
+ - test.py
+ - Die_result.txt
+ - README.md
+ - License
