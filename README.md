@@ -2,7 +2,8 @@
 
 
 # Metadata
-Specify your name and the project name (i.e. Monte Carlo Simulator).
+Name: Royal Wang
+Project: Monte Carlo Simulator
 
 #Synopsis
 
