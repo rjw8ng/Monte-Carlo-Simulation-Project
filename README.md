@@ -32,7 +32,7 @@ Analyzing games.
      
 - Game
 
-     -`__init__(self, die_object)`
+     - `__init__(self, die_object)`
                -`die_object`
           
      - `play(self, turns)`
