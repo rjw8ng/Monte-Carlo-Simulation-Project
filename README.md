@@ -17,35 +17,35 @@ Analyzing games.
 # API description
 ## Classes:
 - Die
-- 
+ 
      - `__init__(self, face)`
-          -`face` 
+               -`face` 
           
      - `change_weight(self, face_value, new_weight)`
-          -`face_value`
-          -`new_weight`
+               -`face_value`
+               -`new_weight`
           
      - `roll(self, amount = 1)`
-          -`amount` 
+               -`amount` 
           
      - `show(self)`
      
 - Game
 
      -`__init__(self, die_object)`
-          -`die_object`
+               -`die_object`
           
      - `play(self, turns)`
-          -`turns` 
+               -`turns` 
           
      - `show_game(self, dataframe, form = 'wide')`
-          -`dataframe`
-          -`form`   
+               -`dataframe`
+               -`form`   
           
 - Analyzer
 
      -`__init__(self, result)`
-          -`result`
+               -`result`
           
      - `jackpot(self)`
      
