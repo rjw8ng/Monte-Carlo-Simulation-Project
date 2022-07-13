@@ -93,12 +93,13 @@ Project: Monte Carlo Simulator
         Stores the results as a dataframe in a public attribute.
 
 # Manifest
- - `__init__.py`
- - `setup.py`
- - `montecarlo.py`
- - `montecarlo_tests.py`
- - `montecarlo_demo.ipynb`
- - `Die_result.txt`
- - `Die_Game.egg-info`
- - `README.md`
- - `LICENSE`
+* `Die_Game`
+    * `__init__.py`
+    * `montecarlo.py`
+    * `montecarlo_tests.py`
+* `setup.py`
+* `montecarlo_demo.ipynb`
+* `Die_result.txt`
+* `Die_Game.egg-info`
+* `README.md`
+* `LICENSE`
