@@ -11,7 +11,7 @@ Project: Monte Carlo Simulator
 2. Copy `pip install -e .` into the command line once you are in the directory of the cloned github repository to install the package. The output should show `Successfully installed Die-Game`.
 ## Importing:
 1. Importing the package can be done in the command line or through a saved python script
-    1. Through command line, type `python` and then enter to activate python. Run `from Die_Game.montecarlo import Die, Game, Analyzer` to import package.
+    1. Through command line, type `python` and then press enter to activate python. Run `from Die_Game.montecarlo import Die, Game, Analyzer` to import package.
     2. Through a saved python script, begin the script with `from Die_Game.montecarlo import Die, Game, Analyzer` and write the remaining code that uses the package afterwards.
 ## Creating dice:
 1. A die has N sides, or “faces”, and W weights, and can be rolled to select a face. 
