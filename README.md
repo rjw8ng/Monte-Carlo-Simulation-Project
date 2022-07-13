@@ -7,15 +7,21 @@ Project: Monte Carlo Simulator
 
 # Synopsis
 ## Installing:
-1. Open command line and clone this repository through `git clone 
+1. Open command line and clone this repository through `git clone git@github.com:rjw8ng/DS-5100-Final-Project.git`
+2. Copy `pip install -e .` into the command line once you are in the directory of the cloned github repository to install the package. The output should show `Successfully installed Die-Game`.
 ## Importing:
-
+1. Importing the package can be done in the command line or through a saved python script
+    1. Through command line, type `python` and then enter to activate python. Run `from Die_Game.montecarlo import Die, Game, Analyzer` to import package.
+    2. Through a saved python script, begin the script with `from Die_Game.montecarlo import Die, Game, Analyzer` and write the remaining code that uses the package afterwards.
 ## Creating dice:
-
+1. To create a dice object, use the Die class initialize an object.
+2. The Die object takes an array of faces as an argument. The array's data type (dtype) may be strings or numbers.
+3. Set the Die object to a variable. (ex. die_object = Die([1,2,3,4,5,6])
 ## Playing games:
-
+1. To play the game, create a list of Die objects created from the Die class.
+2. 
 ## Analyzing games:
-
+1. 
 
 # API description
 ## Classes:
@@ -76,8 +82,10 @@ Project: Monte Carlo Simulator
 # Manifest
  - `__init__.py`
  - `setup.py`
- - `Die.py`
- - `test.py`
+ - `montecarlo.py`
+ - `montecarlo_tests.py`
+ - `montecarlo_demo.ipynb`
  - `Die_result.txt`
+ - `Die_Game.egg-info`
  - `README.md`
  - `LICENSE`
