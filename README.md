@@ -70,12 +70,6 @@ Analyzing games.
         Compute how many times a given face is rolled in each event. <br />
         Stores the results as a dataframe in a public attribute.
 
-
-Each item should show their docstrings.
-All paramters (with data types and defaults) should be described.
-All return values should be described.
-Do not describe private methods and attributes.
-
 # Manifest
  - `__init__.py`
  - `setup.py`
