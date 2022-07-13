@@ -95,15 +95,15 @@ Project: Monte Carlo Simulator
 # Manifest
 * `Die_Game`
     * `__init__.py`
-    * `montecarlo.py`
     * `montecarlo_tests.py`
-* `setup.py`
-* `montecarlo_demo.ipynb`
-* `Die_result.txt`
+    * `montecarlo.py`
 * `Die_Game.egg-info`
     * dependency_links.txt
     * PKG-INFO
     * SOURCE.txt
     * top_level.txt
-* `README.md`
+* `Die_result.txt`
 * `LICENSE`
+* `montecarlo_demo.ipynb`
+* `README.md`
+* `setup.py`
