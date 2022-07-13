@@ -98,10 +98,10 @@ Project: Monte Carlo Simulator
     * `montecarlo_tests.py`
     * `montecarlo.py`
 * `Die_Game.egg-info`
-    * dependency_links.txt
-    * PKG-INFO
-    * SOURCE.txt
-    * top_level.txt
+    * `dependency_links.txt`
+    * `PKG-INFO`
+    * `SOURCE.txt`
+    * `top_level.txt`
 * `Die_result.txt`
 * `LICENSE`
 * `montecarlo_demo.ipynb`
