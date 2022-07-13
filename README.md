@@ -30,18 +30,27 @@ Analyzing games.
            Returns a list of outcomes.
     * `roll(self, amount = 1)`
         * `amount`  (dtype: numeric) <br />
-           Takes a parameter of how many times the die is to be rolled. <br />
+           Takes a parameter of how many times the die is to be rolled; defaults to 1. <br />
            Returns a list of outcomes.
      * `show(self)` <br />
         Returns the dataframe created in the initializer.
 * Game
     * `__init__(self, die_object)`
-        * `die_object`
+        * `die_object`  (dtype: list) <br />
+           Takes a single parameter, a list of already instantiated similar Die objects.
     * `play(self, turns)`
-        * `turns`
+        * `turns`  (dtype: numeric) <br />
+          Takes a parameter to specify how many times the dice should be rolled. <br />
+          Returns dataframe with roll number as a named index, the die number, and face rolled per instance
     * `show_game(self, dataframe, form = 'wide')`
-        * `dataframe`
-        * `form`
+        * `dataframe`  (dtype: dataframe) <br />
+           A method to show the user the results of the most recent play. <br />
+            Takes a parameter to return the dataframe in narrow or wide form. <br />
+        * `form`  (dtype: string) <br />
+            This parameter defaults to wide form. <br />
+            This parameter should raise an exception of the user passes an invalid option. <br />
+            The narrow form of the dataframe will have a two-column index with the roll number and the die number, and a column for the face rolled. <br />
+            The wide form of the dataframe will a single column index with the roll number, and each die number as a column.
 
 * Analyzer
     * `__init__(self, result)`
