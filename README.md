@@ -16,6 +16,10 @@ Analyzing games.
 
 # API description
 ## Classes:
+* Die
+              * `__init__(self, face)`
+                  * `face` 
+          * Bullet list item 2
 - Die
  
      - `__init__(self, face)`
