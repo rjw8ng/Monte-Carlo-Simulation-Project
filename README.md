@@ -109,7 +109,7 @@ Project: Monte Carlo Simulator
     * `top_level.txt`
 * `Die_result.txt`
 * `LICENSE`
+* `README.md`
 * `montecarlo_demo.ipynb`
 * `montecarlo_tests.py`
-* `README.md`
 * `setup.py`
