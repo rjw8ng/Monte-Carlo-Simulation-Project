@@ -18,13 +18,22 @@ Analyzing games.
 ## Classes:
 * Die
     * `__init__(self, face)`
-        * `face`
+        * `face`  (dtype: array) <br /> 
+           Takes an array of faces as an argument. The array's data type (dtype) may be strings or numbers. <br /> 
+           Internally initializes the weights to 1.0 for each face. 
     * `change_weight(self, face_value, new_weight)`
-        * `face_value`
-        * `new_weight`
+        * `face_value`  (dtype: string or number) <br /> 
+           Takes two arguments: the face value to be changed and the new weight. <br /> 
+           Changes the weights value of the face inputted.
+        * `new_weight`  (dtype: float or dtype able to convert to float) <br />
+           Takes a parameter of how many times the die is to be rolled. <br />
+           Returns a list of outcomes.
     * `roll(self, amount = 1)`
-        * `amount`
-     * `show(self)`
+        * `amount`  (dtype: numeric) <br />
+           Takes a parameter of how many times the die is to be rolled. <br />
+           Returns a list of outcomes.
+     * `show(self)` <br />
+        Returns the dataframe created in the initializer.
 * Game
     * `__init__(self, die_object)`
         * `die_object`
