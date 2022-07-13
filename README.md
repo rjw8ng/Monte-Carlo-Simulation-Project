@@ -2,17 +2,20 @@
 
 
 # Metadata
-Name: Royal Wang
+Name: Royal Wang <br /> 
 Project: Monte Carlo Simulator
 
 # Synopsis
+## Installing:
+1. Open command line and clone this repository through `git clone 
+## Importing:
 
-Show demo code of how the classes are used, i.e.
-installing
-importing
-Creating dice
-Playing games
-Analyzing games.
+## Creating dice:
+
+## Playing games:
+
+## Analyzing games:
+
 
 # API description
 ## Classes:
