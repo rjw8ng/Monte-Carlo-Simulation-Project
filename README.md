@@ -101,6 +101,9 @@ Project: Monte Carlo Simulator
 * `montecarlo_demo.ipynb`
 * `Die_result.txt`
 * `Die_Game.egg-info`
-    * 
+    * dependency_links.txt
+    * PKG-INFO
+    * SOURCE.txt
+    * top_level.txt
 * `README.md`
 * `LICENSE`
