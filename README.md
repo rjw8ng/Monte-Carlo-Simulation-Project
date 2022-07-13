@@ -18,7 +18,7 @@ Project: Monte Carlo Simulator
     1. W defaults to 1.0 for each face but can be changed after the object is created.
     2. The die has one behavior, which is to be rolled one or more times.
     3. A “die” can be any discrete random variable associated with a stochastic process.
-2. To create a dice object, use the `Die` class initialize an object.
+2. To create a dice object, use the `Die` class to initialize an object.
 3. The Die object takes an array of faces as an argument. The array's data type (dtype) may be strings or numbers.
 4. Set the Die object to a variable. (ex. `die_object = Die([1,2,3,4,5,6]`)
 ## Playing games:
@@ -32,9 +32,9 @@ Project: Monte Carlo Simulator
 4. The `show` function can be used to change the output structure of the `play` function to a `wide` or `narrow` dataframe format. (ex. `show(result, form = 'narrow')`)
 ## Analyzing games:
 1. To analyze the output from playing the game, use the `Analyzer` class to output descriptive statistical properties. These properties results are available as attributes of an Analyzer object. Attributes (and associated methods) include:
-    1. A `face counts per roll`, i.e. the number of times a given face appeared in each roll. For example, if a roll of five dice has all sixes, then the counts for this roll would be 6 for the face value '6' and 0 for the other faces.
-    2. A `jackpot` count, i.e. how many times a roll resulted in all faces being the same, e.g. all one for a six-sided die.
-    3. A `combo` count, i.e. how many combination types of faces were rolled and their counts.
+    1. A `jackpot` count, i.e. how many times a roll resulted in all faces being the same, e.g. all one for a six-sided die.
+    2. A `combo` count, i.e. how many combination types of faces were rolled and their counts.
+    3. A `face counts per roll`, i.e. the number of times a given face appeared in each roll. For example, if a roll of five dice has all sixes, then the counts for this roll would be 6 for the face value '6' and 0 for the other faces. 
 
 # API description
 ## Classes:
