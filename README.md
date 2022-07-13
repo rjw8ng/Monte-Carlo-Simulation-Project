@@ -19,43 +19,28 @@ Analyzing games.
 * Die
     * `__init__(self, face)`
         * `face`
-* Bullet list item 2
+    * `change_weight(self, face_value, new_weight)`
+        * `face_value`
+        * `new_weight`
+    * `roll(self, amount = 1)`
+        * `amount`
+     * `show(self)`
+* Game
+    * `__init__(self, die_object)`
+        * `die_object`
+    * `play(self, turns)`
+        * `turns`
+    * `show_game(self, dataframe, form = 'wide')`
+        * `dataframe`
+        * `form`
 
-- Die
- 
-     - `__init__(self, face)`
-        `face` 
-          
-     - `change_weight(self, face_value, new_weight)`
-        `face_value`
-        `new_weight`
-          
-     - `roll(self, amount = 1)`
-        `amount` 
-          
-     - `show(self)`
-     
-- Game
+* Analyzer
+    * `__init__(self, result)`
+        * `result`
+    * `jackpot(self)`
+    * `combo(self)`
+    * `face_counts_per_roll(self)`
 
-     - `__init__(self, die_object)`
-       `die_object`
-          
-     - `play(self, turns)`
-        `turns` 
-          
-     - `show_game(self, dataframe, form = 'wide')`
-       `dataframe`
-       `form`
-- Analyzer
-
-     - `__init__(self, result)`
-       `result`
-          
-     - `jackpot(self)`
-     
-     - `combo(self)`
-     
-     - `face_counts_per_roll(self)`
 
 Each item should show their docstrings.
 All paramters (with data types and defaults) should be described.
