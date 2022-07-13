@@ -27,9 +27,9 @@ Project: Monte Carlo Simulator
     2.  By “same kind” and “similarly defined” we mean that each die in a given game has the same number of sides and associated faces, but each die object may have its own weights.
     3.  The `Game` class has a behavior to play a game, i.e. to rolls all of the dice a given number of times.
     4.  The `Game` class keeps the results of its most recent play. 
-2. To play the game, create a list of Die objects created from the Die class. (ex. `[die_object1,die_object1, die_object1]`)
-3. Run the `play` function from the `Game` class and save the output in a variable. (ex. `results = play([die_object1,die_object1, die_object1])`)
-4. The `show` function can be used to change the output structure of the `play` function to a `wide` or `narrow` dataframe format. (ex. `show(result, form = 'narrow')`)
+2. To play the game, create a list of Die objects created from the `Die` class and initalize the `Game` class. (ex. `gm = Game([die_object1,die_object1, die_object1])`)
+3. Run the `play` function from the `Game` class and save the output in a variable. (ex. `results = gm.play([die_object1,die_object1, die_object1])`)
+4. The `show` function can be used to change the output structure of the `play` function to a `wide` or `narrow` dataframe format. (ex. `gm.show(result, form = 'narrow')`)
 ## Analyzing games:
 1. To analyze the output from playing the game, use the `Analyzer` class to output descriptive statistical properties. These properties results are available as attributes of an Analyzer object. Attributes (and associated methods) include:
     1. A `jackpot` count, i.e. how many times a roll resulted in all faces being the same, e.g. all one for a six-sided die.
