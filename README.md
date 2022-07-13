@@ -54,10 +54,21 @@ Analyzing games.
 
 * Analyzer
     * `__init__(self, result)`
-        * `result`
-    * `jackpot(self)`
-    * `combo(self)`
-    * `face_counts_per_roll(self)`
+        * `result`  (dtype:dataframe) <br />
+          Takes a game object as its input parameter. <br />
+           At initialization time, it also infers the data type of the die faces used.
+    * `jackpot(self)` <br />
+        A jackpot method to compute how many times the game resulted in all faces being identical. <br />
+        Returns an integer for the number times to the user. <br />
+        Stores the results as a dataframe of jackpot results in a public attribute.
+    * `combo(self)` <br />
+       A combo method to compute the distinct combinations of faces rolled, along with their counts. <br />
+        Compute the distinct combinations of faces rolled, along with their counts. <br />
+        Stores the results as a dataframe in a public attribute. <br />
+    * `face_counts_per_roll(self)` <br />
+       A face counts per roll method to compute how many times a given face is rolled in each event. <br />
+        Compute how many times a given face is rolled in each event. <br />
+        Stores the results as a dataframe in a public attribute.
 
 
 Each item should show their docstrings.
