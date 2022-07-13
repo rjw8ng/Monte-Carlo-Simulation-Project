@@ -14,9 +14,13 @@ Project: Monte Carlo Simulator
     1. Through command line, type `python` and then enter to activate python. Run `from Die_Game.montecarlo import Die, Game, Analyzer` to import package.
     2. Through a saved python script, begin the script with `from Die_Game.montecarlo import Die, Game, Analyzer` and write the remaining code that uses the package afterwards.
 ## Creating dice:
-1. To create a dice object, use the `Die` class initialize an object.
-2. The Die object takes an array of faces as an argument. The array's data type (dtype) may be strings or numbers.
-3. Set the Die object to a variable. (ex. `die_object = Die([1,2,3,4,5,6]`)
+1. A die has N sides, or “faces”, and W weights, and can be rolled to select a face. 
+    1. W defaults to 1.0 for each face but can be changed after the object is created.
+    2. The die has one behavior, which is to be rolled one or more times.
+    3. A “die” can be any discrete random variable associated with a stochastic process.
+2. To create a dice object, use the `Die` class initialize an object.
+3. The Die object takes an array of faces as an argument. The array's data type (dtype) may be strings or numbers.
+4. Set the Die object to a variable. (ex. `die_object = Die([1,2,3,4,5,6]`)
 ## Playing games:
 1. A game consists of rolling of one or more dice of the same kind one or more times. 
     1.  Each game is initialized with one or more of similarly defined dice (Die objects).
