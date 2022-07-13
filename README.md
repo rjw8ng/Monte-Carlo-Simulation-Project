@@ -27,14 +27,20 @@ Project: Monte Carlo Simulator
     2.  By “same kind” and “similarly defined” we mean that each die in a given game has the same number of sides and associated faces, but each die object may have its own weights.
     3.  The `Game` class has a behavior to play a game, i.e. to rolls all of the dice a given number of times.
     4.  The `Game` class keeps the results of its most recent play. 
-2. To play the game, create a list of Die objects created from the `Die` class and initalize the `Game` class. (ex. `gm = Game([die_object1,die_object1, die_object1])`)
-3. Run the `play` function from the `Game` class and save the output in a variable. (ex. `results = gm.play([die_object1,die_object1, die_object1])`)
-4. The `show` function can be used to change the output structure of the `play` function to a `wide` or `narrow` dataframe format. (ex. `gm.show(result, form = 'narrow')`)
+2. To play the game, create a list of Die objects created from the `Die` class and initalize the `Game` class. <br />
+    (ex. `gm = Game([die_object1,die_object1, die_object1])`)
+3. Run the `play` function from the `Game` class and save the output in a variable. <br />
+    (ex. `results = gm.play(10)` excutes 10 dice rolls)
+5. The `show` function can be used to change the output structure of the `play` function to a `wide` or `narrow` dataframe format. <br />
+     (ex. `gm.show(result, form = 'narrow')`)
 ## Analyzing games:
-1. To analyze the output from playing the game, use the `Analyzer` class to output descriptive statistical properties. These properties results are available as attributes of an Analyzer object. Attributes (and associated methods) include:
-    1. A `jackpot` count, i.e. how many times a roll resulted in all faces being the same, e.g. all one for a six-sided die.
-    2. A `combo` count, i.e. how many combination types of faces were rolled and their counts.
-    3. A `face counts per roll`, i.e. the number of times a given face appeared in each roll. For example, if a roll of five dice has all sixes, then the counts for this roll would be 6 for the face value '6' and 0 for the other faces. 
+1. To analyze the output from playing the game, use the `Analyzer` class to output descriptive statistical properties (ex. `a = Analyzer(gm.play(10)`). These properties results are available as attributes of an Analyzer object. Attributes (and associated methods) include:
+    1. A `jackpot` count, i.e. how many times a roll resulted in all faces being the same, e.g. all one for a six-sided die. <br />
+        (ex. `a.jackpot()`)
+    3. A `combo` count, i.e. how many combination types of faces were rolled and their counts. <br />
+        (ex. `a.combo()`)
+    5. A `face counts per roll`, i.e. the number of times a given face appeared in each roll. For example, if a roll of five dice has all sixes, then the counts for this roll would be 6 for the face value '6' and 0 for the other faces. <br />
+        (ex. `a.face_counts_per_roll()`)
 
 # API description
 ## Classes:
