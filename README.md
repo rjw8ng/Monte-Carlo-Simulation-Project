@@ -14,14 +14,23 @@ Project: Monte Carlo Simulator
     1. Through command line, type `python` and then enter to activate python. Run `from Die_Game.montecarlo import Die, Game, Analyzer` to import package.
     2. Through a saved python script, begin the script with `from Die_Game.montecarlo import Die, Game, Analyzer` and write the remaining code that uses the package afterwards.
 ## Creating dice:
-1. To create a dice object, use the Die class initialize an object.
+1. To create a dice object, use the `Die` class initialize an object.
 2. The Die object takes an array of faces as an argument. The array's data type (dtype) may be strings or numbers.
-3. Set the Die object to a variable. (ex. die_object = Die([1,2,3,4,5,6])
+3. Set the Die object to a variable. (ex. `die_object = Die([1,2,3,4,5,6]`)
 ## Playing games:
-1. To play the game, create a list of Die objects created from the Die class.
-2. 
+1. A game consists of rolling of one or more dice of the same kind one or more times. 
+    1.  Each game is initialized with one or more of similarly defined dice (Die objects).
+    2.  By “same kind” and “similarly defined” we mean that each die in a given game has the same number of sides and associated faces, but each die object may have its own weights.
+    3.  The `Game` class has a behavior to play a game, i.e. to rolls all of the dice a given number of times.
+    4.  The `Game` class keeps the results of its most recent play. 
+2. To play the game, create a list of Die objects created from the Die class. (ex. `[die_object1,die_object1, die_object1]`)
+3. Run the `play` function from the `Game` class and save the output in a variable. (ex. `results = play([die_object1,die_object1, die_object1])`)
+4. The `show` function can be used to change the output structure of the `play` function to a `wide` or `narrow` dataframe format. (ex. `show(result, form = 'narrow')`)
 ## Analyzing games:
-1. 
+1. To analyze the output from playing the game, use the `Analyzer` class to output descriptive statistical properties. These properties results are available as attributes of an Analyzer object. Attributes (and associated methods) include:
+    1. A `face counts per roll`, i.e. the number of times a given face appeared in each roll. For example, if a roll of five dice has all sixes, then the counts for this roll would be 6 for the face value '6' and 0 for the other faces.
+    2. A `jackpot` count, i.e. how many times a roll resulted in all faces being the same, e.g. all one for a six-sided die.
+    3. A `combo` count, i.e. how many combination types of faces were rolled and their counts.
 
 # API description
 ## Classes:
