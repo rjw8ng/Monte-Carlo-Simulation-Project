@@ -101,7 +101,6 @@ Project: Monte Carlo Simulator
 # Manifest
 * `Die_Game`
     * `__init__.py`
-    * `montecarlo_tests.py`
     * `montecarlo.py`
 * `Die_Game.egg-info`
     * `dependency_links.txt`
@@ -111,5 +110,6 @@ Project: Monte Carlo Simulator
 * `Die_result.txt`
 * `LICENSE`
 * `montecarlo_demo.ipynb`
+* `montecarlo_tests.py`
 * `README.md`
 * `setup.py`
