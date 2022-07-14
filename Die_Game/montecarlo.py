@@ -3,7 +3,6 @@ import numpy as np
 import random
 
 class Die:
-    
     '''
     A die has N sides, or “faces”, and W weights, and can be rolled to select a face. 
 
@@ -11,7 +10,6 @@ class Die:
     Note that the weights are just numbers, not a normalized probability distribution.
     The die has one behavior, which is to be rolled one or more times.
     '''
-    
     def __init__(self, face):
         
         '''
@@ -70,15 +68,13 @@ class Die:
         return self.df
     
 class Game:
-    
     '''
     A game consists of rolling of one or more dice of the same kind one or more times. 
 
-    - Each game is initialized with one or more of similarly defined dice (Die objects).
-    - By “same kind” and “similarly defined” we mean that each die in a given game has the same number of sides and associated faces, but each die object may have its own weights.
-    - The class has a behavior to play a game, i.e. to rolls all of the dice a given number of times.
-    - The class keeps the results of its most recent play. 
-    
+    Each game is initialized with one or more of similarly defined dice (Die objects).
+    By “same kind” and “similarly defined” we mean that each die in a given game has the same number of sides and associated faces, but each die object may have its own weights.
+    The class has a behavior to play a game, i.e. to rolls all of the dice a given number of times.
+    The class keeps the results of its most recent play
     '''
     
     def __init__(self, die_object):
@@ -146,15 +142,9 @@ class Game:
             return dataframe.set_index(["Die", "Roll Number"]) 
         
 class Analyzer:
-    
     '''
-    An analyzer takes the results of a single game and computes various descriptive statistical properties about it. These properties results are available as attributes of an Analyzer object. Attributes (and associated methods) include:
-
-    - A face counts per roll, i.e. the number of times a given face appeared in each roll. For example, if a roll of five dice has all sixes, then the counts for this roll would be 6 for the face value '6' and 0 for the other faces.
-    - A jackpot count, i.e. how many times a roll resulted in all faces being the same, e.g. all one for a six-sided die.
-    - A combo count, i.e. how many combination types of faces were rolled and their counts.
+    An analyzer takes the results of a single game and computes various descriptive statistical properties about it. These properties results are available as attributes of an Analyzer object.
     '''
-    
     def __init__(self, result):
         
         '''
