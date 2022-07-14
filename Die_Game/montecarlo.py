@@ -4,6 +4,14 @@ import random
 
 class Die:
     
+    '''
+    A die has N sides, or “faces”, and W weights, and can be rolled to select a face. 
+
+    W defaults to 1.0 for each face but can be changed after the object is created.
+    Note that the weights are just numbers, not a normalized probability distribution.
+    The die has one behavior, which is to be rolled one or more times.
+    '''
+    
     def __init__(self, face):
         
         '''
@@ -18,7 +26,10 @@ class Die:
     def change_weight(self, face_value, new_weight):
         
         '''
+        Input: 
         Takes two arguments: the face value to be changed and the new weight.
+        
+        Output:
         Changes the weights value of the face inputted.
         '''
         
@@ -34,7 +45,10 @@ class Die:
     def roll(self, amount = 1):
         
         '''
+        Input:
         Takes a parameter of how many times the die is to be rolled.
+        
+        Output:
         Returns a list of outcomes.
         '''
         
@@ -49,12 +63,23 @@ class Die:
     def show(self):
         
         '''
+        Output:
         Returns the dataframe created in the initializer.
         '''
         
         return self.df
     
 class Game:
+    
+    '''
+    A game consists of rolling of one or more dice of the same kind one or more times. 
+
+    - Each game is initialized with one or more of similarly defined dice (Die objects).
+    - By “same kind” and “similarly defined” we mean that each die in a given game has the same number of sides and associated faces, but each die object may have its own weights.
+    - The class has a behavior to play a game, i.e. to rolls all of the dice a given number of times.
+    - The class keeps the results of its most recent play. 
+    
+    '''
     
     def __init__(self, die_object):
         
@@ -67,7 +92,11 @@ class Game:
     def play(self, turns):
         
         '''
+        Input:
         Takes a parameter to specify how many times the dice should be rolled.
+        
+        Output:
+        Dataframe containing the play output (Roll Number, Die Number, Roll Value)
         '''
         
         new_df = pd.DataFrame(columns = ["Roll_Number", "Die", "Roll"])
@@ -98,9 +127,12 @@ class Game:
         '''
         A method to show the user the results of the most recent play.
         
+        Input:
         Takes a parameter to return the dataframe in narrow or wide form.
         This parameter defaults to wide form.
         This parameter should raise an exception of the user passes an invalid option.
+        
+        Output:
         The narrow form of the dataframe will have a two-column index with the roll number and the die number, and a column for the face rolled.
         The wide form of the dataframe will a single column index with the roll number, and each die number as a column.
         '''
@@ -114,6 +146,14 @@ class Game:
             return dataframe.set_index(["Die", "Roll Number"]) 
         
 class Analyzer:
+    
+    '''
+    An analyzer takes the results of a single game and computes various descriptive statistical properties about it. These properties results are available as attributes of an Analyzer object. Attributes (and associated methods) include:
+
+    - A face counts per roll, i.e. the number of times a given face appeared in each roll. For example, if a roll of five dice has all sixes, then the counts for this roll would be 6 for the face value '6' and 0 for the other faces.
+    - A jackpot count, i.e. how many times a roll resulted in all faces being the same, e.g. all one for a six-sided die.
+    - A combo count, i.e. how many combination types of faces were rolled and their counts.
+    '''
     
     def __init__(self, result):
         
@@ -130,6 +170,7 @@ class Analyzer:
         '''
         A jackpot method to compute how many times the game resulted in all faces being identical.
         
+        Output:
         Returns an integer for the number times to the user.
         Stores the results as a dataframe of jackpot results in a public attribute.
         '''
@@ -161,7 +202,7 @@ class Analyzer:
         '''
         A combo method to compute the distinct combinations of faces rolled, along with their counts
         
-        Compute the distinct combinations of faces rolled, along with their counts.
+        Output:
         Stores the results as a dataframe in a public attribute.
         '''
         self.combo_df = pd.DataFrame()
@@ -206,7 +247,7 @@ class Analyzer:
         '''
         A face counts per roll method to compute how many times a given face is rolled in each event.
         
-        Compute how many times a given face is rolled in each event.
+        Output:
         Stores the results as a dataframe in a public attribute.
         '''
         
