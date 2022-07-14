@@ -44,7 +44,8 @@ Project: Monte Carlo Simulator
 
 # API description
 ## Classes:
-* Die
+* Die <br /> 
+    A die has N sides, or “faces”, and W weights, and can be rolled to select a face. 
     * `__init__(self, face)`
         * `face`  (dtype: array) <br /> 
            Takes an array of faces as an argument. The array's data type (dtype) may be strings or numbers. <br /> 
@@ -62,7 +63,8 @@ Project: Monte Carlo Simulator
            Returns a list of outcomes.
      * `show(self)` <br />
         Returns the dataframe created in the initializer.
-* Game
+* Game <br />
+A game consists of rolling of one or more dice of the same kind one or more times. 
     * `__init__(self, die_object)`
         * `die_object`  (dtype: list) <br />
            Takes a single parameter, a list of already instantiated similar Die objects.
@@ -80,7 +82,8 @@ Project: Monte Carlo Simulator
             The narrow form of the dataframe will have a two-column index with the roll number and the die number, and a column for the face rolled. <br />
             The wide form of the dataframe will a single column index with the roll number, and each die number as a column.
 
-* Analyzer
+* Analyzer <br />
+An analyzer takes the results of a single game and computes various descriptive statistical properties about it. These properties results are available as attributes of an Analyzer object.
     * `__init__(self, result)`
         * `result`  (dtype:dataframe) <br />
           Takes a game object as its input parameter. <br />
