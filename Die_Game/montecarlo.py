@@ -14,7 +14,7 @@ class Die:
         
         '''
         Takes an array of faces as an argument. The array's data type (dtype) may be strings or numbers.
-        Internally iInitializes the weights to 1.0 for each face.
+        Internally initializes the weights to 1.0 for each face.
         '''
         
         self.face = face
