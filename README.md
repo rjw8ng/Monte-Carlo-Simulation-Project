@@ -2,11 +2,11 @@
 
 Monte Carlo simulations are used to model the probability of different outcomes in a process that cannot easily be predicted due to the intervention of random variables. This package can create an object with faces and weights, run simulations of outcomes, and analyze the resuling game.
 
-# Metadata
+## Metadata
 Name: Royal Wang <br /> 
 Project: Monte Carlo Simulator
 
-# Synopsis
+## Synopsis
 ## Installing:
 1. Open command line and clone this repository through `git clone git@github.com:rjw8ng/DS-5100-Final-Project.git`
 2. Copy `pip install -e .` into the command line once you are in the directory of the cloned github repository to install the package. The output should show `Successfully installed Die-Game`.
