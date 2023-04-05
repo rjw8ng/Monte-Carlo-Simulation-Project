@@ -1,4 +1,4 @@
-# Monte Carlo Sumulator
+# Monte Carlo Simulator
 
 Monte Carlo simulations are used to model the probability of different outcomes in a process that cannot easily be predicted due to the intervention of random variables. This package can create an object with faces and weights, run simulations of outcomes, and analyze the resuling game.
 
